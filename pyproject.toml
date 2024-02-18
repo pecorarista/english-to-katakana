@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "english-to-katakana"
+version = "0.1.0"
+description = ""
+authors = ["Miyazawa Akira <pecorarista@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+cmudict = "^1.0.18"
+sudachipy = "^0.6.8"
+sudachidict-full = "^20240109"
+syllabifier = { git = "https://github.com/dippedrusk/arpabet-syllabifier.git" }
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+flake8-pyproject = "^1.2.3"
+isort = "^5.13.2"
+pytest = "^8.0.1"
+ipython = "^8.21.0"
+
+[tool.flake8]
+max-line-length = 120
+
+[tool.isort]
+line_length = 120
+multi_line_output = 3
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
