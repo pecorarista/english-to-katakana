@@ -41,6 +41,7 @@ def test_syllable_to_katakana(syllable: str, expected: str) -> None:
         pytest.param('hot', 'ハート', id='hot'),
         pytest.param('topology', 'タポーラジー', id='topology'),
         pytest.param('english', 'イングリシュ', id='english'),
+        pytest.param('number', 'ナンバー', id='number'),
     ]
 )
 def test_word_to_katakana(
